@@ -1,0 +1,46 @@
+.arrow-container {
+  display: flex;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding: 7px 0;
+  padding-top: 9px;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-bg);
+  transform-origin: bottom center;
+  transition: transform 0.3s ease-out;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.arrow {
+  width: 120px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .arrow-wing {
+    width: 10px;
+    height: 35px;
+    border-radius: 5px;
+    background-color: rgb(var(--color3));
+    margin: 5px;
+  }
+
+  .arrow-wing:nth-of-type(1) {
+    transform: rotate(-45deg);
+  }
+
+  .arrow-wing:nth-of-type(2) {
+    transform: rotate(45deg);
+  }
+}
+
+.arrow-container:hover {
+  transform: translateX(-50%) scale(1.2);
+}

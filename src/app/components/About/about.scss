@@ -1,0 +1,112 @@
+.about-page {
+  height: 100vh;
+  background-color: rgba(26, 26, 26, 0.7);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  place-items: center;
+  position: relative;
+}
+
+.about-container {
+  align-items: flex-start;
+  margin-bottom: 2rem;
+  // text-align: left;
+}
+
+.about-title-container {
+  left: 0;
+
+  h1 {
+    position: relative;
+    font-size: 80px;
+    z-index: 1;
+    text-align: left;
+    display: inline-block;
+  }
+
+  h1::after {
+    content: "";
+    background-color: rgb(var(--color3), 0.8);
+    height: 30px;
+    width: 200px;
+    position: absolute;
+    bottom: 8%;
+    right: -10%;
+    z-index: -1;
+  }
+}
+
+.photobio-container {
+  display: flex;
+  gap: 2rem;
+}
+
+.photo-container {
+  position: relative;
+  width: 225px;
+  height: 280px;
+  overflow: hidden;
+  border-radius: 15px;
+
+  img {
+    border-radius: 15px;
+    filter: grayscale(50%);
+    transform: scale(1.5);
+  }
+}
+
+.bio-container {
+  width: 600px;
+  height: auto;
+  line-height: 160%;
+  margin: 0;
+}
+
+.bio-quote {
+  position: relative;
+  margin-bottom: 2rem;
+
+  .quote {
+    padding-bottom: 0;
+    margin: 0;
+  }
+
+  .author {
+    position: absolute;
+    font-size: 11px;
+    margin: 0;
+    right: 0%;
+    text-align: right;
+    margin-top: -12px;
+  }
+}
+
+.looking-for-container {
+  display: block;
+  width: 700px;
+}
+
+.hobbies-container {
+  align-items: left;
+  justify-content: left;
+  text-align: left;
+  margin-left: 0;
+  padding-left: 0;
+  margin-top: 0;
+  
+  h2 {
+    margin-bottom: 0;
+    margin-block-start: 0;
+  }
+
+  ul {
+    padding: 0.8rem;
+    margin: 0;
+  }
+  li {
+    padding-bottom: 1rem;
+  }
+}

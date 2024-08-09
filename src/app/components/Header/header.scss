@@ -1,0 +1,43 @@
+.header-container {
+    background-color: var(--color-bg);
+    display: flex;
+    padding: 0.8rem;
+    justify-content: flex-end;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.menu-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding-right: 2rem;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.menu-container a {
+    color: white;
+    text-decoration: none;
+    position: relative;
+    padding-bottom: 7px;
+    font-weight: 900;
+}
+
+.menu-container a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: rgb(173, 255, 191);
+    transition: width 0.3s ease;
+}
+
+.menu-container a:hover::after {
+    width: 100%;
+}
