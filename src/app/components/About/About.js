@@ -21,13 +21,6 @@ export default function About({ font }) {
               />
             </div>
             <div className="bio-container">
-              <div className="bio-quote">
-                <p className="quote">
-                  “Anyone who stops learning is old, whether at twenty or
-                  eighty. Anyone who keeps learning stays young.”
-                </p>
-                <p className="author">-Henry Ford</p>
-              </div>
               <p>
                 I'm a career changer from an engineer in construction to a
                 full-stack software developer, who is based in the south-west.
