@@ -24,8 +24,8 @@ export default function RootLayout({ children }) {
         <InteractiveBG />
         <Header font={encodeSansExpanded.className}/>
         <About font={encodeSansExpanded.className}/>
-        <TechStack />
-        <Projects />
+        {/* <TechStack /> */}
+        <Projects font={encodeSansExpanded.className}/>
       </body>
     </html>
   );

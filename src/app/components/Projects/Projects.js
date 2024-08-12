@@ -1,9 +1,113 @@
-import './projects.scss'
+"use client";
+import "./projects.scss";
+import Image from "next/image";
 
-export default function Projects() {
-    return (
-      <main id='projects' className="projects-container">
-        <p>Hello Projects page!</p>
-      </main>
-    );
-  }
+import gitHubLogo from "../../global_images/github-logo.png";
+import netlifyLogo from "./icons/netlify-logo.png";
+import ProjectCard from "./ProjectCard";
+
+export default function Projects({ font }) {
+  const projects = [
+    {
+      title: "NC NEWS",
+      description:
+        "A full-stack project, showcasing a Reddit-based RESTful API, created as a back-end project and featuring CRUD operations for articles, comments, and users. The front-end comprises a single-page application using React hooks for state management and user context. The project supports pagination, data filtering with query parameters, and user interaction, utilizing optimistic rendering.",
+      techstack: [
+        "Back-end: JavaScript, PSQL, Node.js, Express, Supertest, Jest",
+        "Front-end: JavaScript, HTML, CSS, React, Axios",
+      ],
+      links: [
+        {
+          url: "https://github.com/darinaJur/nc-news",
+          src: gitHubLogo,
+          alt: "GitHub logo",
+        },
+        {
+          url: "https://github.com/darinaJur/fe-nc-news",
+          src: gitHubLogo,
+          alt: "GitHub logo",
+        },
+        {
+          url: "https://nc-news12.netlify.app/",
+          src: netlifyLogo,
+          alt: "Netlify logo",
+        },
+      ],
+    },
+    {
+      title: "RECIPE BOX",
+      description:
+        "An iOS app for adding, storing and viewing recipes, featuring dynamic visual representation of recipe collections. The app features an ability to filter and sort recipes and allows users to import recipes via text extraction from screenshots.",
+      techstack: [
+        "Back-end: Firebase, Firestore, Google Cloud Vision",
+        "Front-end: JavaScript, React Native, Expo, NativeWind/Tailwind, Axios",
+      ],
+      links: [
+        {
+          url: "https://github.com/bitbybit-nc/RecipeBox",
+          src: gitHubLogo,
+          alt: "GitHub logo",
+        },
+      ],
+    },
+    {
+      title: "PORTFOLIO",
+      description:
+        "A personal portfolio, featuring animated background using CSS and SVG filter and interactive mouse movements. ",
+      techstack: [
+        "Front-end: JavaScript, Next.js, HTML, Vanilla CSS, SVG",
+      ],
+      links: [
+        {
+          url: "https://github.com/darinaJur/portfolio",
+          src: gitHubLogo,
+          alt: "GitHub logo",
+        },
+      ],
+    },
+  ];
+
+  return (
+    <main id="projects" className="projects-page">
+      <div className="projects-container">
+        <div className="project-title-container">
+          <h1>projects</h1>
+        </div>
+        <div className="project-cards-container">
+          {projects.map((project) => (
+            <ProjectCard
+              title={project.title}
+              links={project.links}
+              description={project.description}
+              techstack={project.techstack}
+              font={font}
+            />
+          ))}
+        </div>
+      </div>
+    </main>
+  );
+}
+
+// {!flipped ? (
+//   <div className="project-card-face" onClick={handleClick}>
+//     <h2>RECIPE BOX</h2>
+//   </div>
+// ) : (
+//   <div className="project-card-back" onClick={handleClick}>
+//     <h3>RECIPE BOX</h3>
+//     <div className="project-links">
+//       <Image src={gitHubLogo} alt="GitHub logo" />
+//       <Image src={netlifyLogo} alt="Netlify logo" />
+//     </div>
+//     <div className={font}>
+//       <p>
+//         A mobile app.
+//       </p>
+//       <p>
+//         Back-end: JavaScript, PSQL, Node.js, Express, Supertest, Jest
+//       </p>
+//       <p>Front-end: JavaScript, HTML, CSS, React, Axios</p>
+//     </div>
+//   </div>
+// )}

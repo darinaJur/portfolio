@@ -2,6 +2,7 @@ import Image from "next/image";
 import myPhoto from "./darina-photo.png";
 import "./about.scss";
 import DownButton from "../DownButton/DownButton";
+import TechStack from "../TechStack/TechStack";
 
 export default function About({ font }) {
   return (
@@ -24,24 +25,24 @@ export default function About({ font }) {
               <p>
                 I'm a career changer from an engineer in construction to a
                 full-stack software developer, who is based in the south-west.
-                New technology, logic and solving puzzles is what excites and
-                drives me. I love that programming offers new ways of thinking
+                Why programming? It is a combination of problem-solving and
+                creative thinking that lets me to turn ideas into something
+                tangible. I love that programming offers new ways of thinking
                 and a lifelong journey of learning.
               </p>
-            <p>
-              I am looking to continue my career in a place that supports
-              continuous development and encourages inclusivity and diversity.
-            </p>
+              <p>
+                I am looking to continue my career in a place that supports
+                continuous development and encourages inclusivity and diversity.
+              </p>
             </div>
           </div>
-          </div>
-          <div className="hobbies-container">
-            <h2>hobbies</h2>
-            <div className={font}>
+        </div>
+        <div className="hobbies-container">
+          <h2>hobbies</h2>
+          <div className={font}>
             <ul>
               <li>
-                Fitness - Hiking, strength training, skiing, podcasts
-                and books.
+                Fitness - Hiking, strength training, skiing, podcasts and books.
               </li>
               <li>
                 Creative - acrylics painting, karaoke and car singing, Figma
@@ -52,10 +53,11 @@ export default function About({ font }) {
                 streams.
               </li>
             </ul>
-            </div>
+          </div>
         </div>
       </div>
-      <DownButton pathway="#techstack" />
+      <TechStack />
+      <DownButton pathway="#projects" />
     </main>
   );
 }
