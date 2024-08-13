@@ -1,10 +1,13 @@
 "use client";
 import "./projects.scss";
-import Image from "next/image";
 
 import gitHubLogo from "../../global_images/github-logo.png";
 import netlifyLogo from "./icons/netlify-logo.png";
 import ProjectCard from "./ProjectCard";
+
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 export default function Projects({ font }) {
   const projects = [
@@ -54,9 +57,7 @@ export default function Projects({ font }) {
       title: "PORTFOLIO",
       description:
         "A personal portfolio, featuring animated background using CSS and SVG filter and interactive mouse movements. ",
-      techstack: [
-        "Front-end: JavaScript, Next.js, HTML, Vanilla CSS, SVG",
-      ],
+      techstack: ["Front-end: JavaScript, Next.js, HTML, Vanilla CSS, SVG"],
       links: [
         {
           url: "https://github.com/darinaJur/portfolio",
@@ -67,15 +68,24 @@ export default function Projects({ font }) {
     },
   ];
 
+  const settings = {
+    dots: true,
+    infinite: false,
+    speed: 500,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+  };
+
   return (
     <main id="projects" className="projects-page">
       <div className="projects-container">
         <div className="project-title-container">
           <h1>projects</h1>
         </div>
-        <div className="project-cards-container">
-          {projects.map((project) => (
+        <Slider {...settings}>
+          {projects.map((project, index) => (
             <ProjectCard
+              key={index}
               title={project.title}
               links={project.links}
               description={project.description}
@@ -83,31 +93,8 @@ export default function Projects({ font }) {
               font={font}
             />
           ))}
-        </div>
+        </Slider>
       </div>
     </main>
   );
 }
-
-// {!flipped ? (
-//   <div className="project-card-face" onClick={handleClick}>
-//     <h2>RECIPE BOX</h2>
-//   </div>
-// ) : (
-//   <div className="project-card-back" onClick={handleClick}>
-//     <h3>RECIPE BOX</h3>
-//     <div className="project-links">
-//       <Image src={gitHubLogo} alt="GitHub logo" />
-//       <Image src={netlifyLogo} alt="Netlify logo" />
-//     </div>
-//     <div className={font}>
-//       <p>
-//         A mobile app.
-//       </p>
-//       <p>
-//         Back-end: JavaScript, PSQL, Node.js, Express, Supertest, Jest
-//       </p>
-//       <p>Front-end: JavaScript, HTML, CSS, React, Axios</p>
-//     </div>
-//   </div>
-// )}

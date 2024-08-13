@@ -2,28 +2,20 @@
 import "./projects.scss";
 import Image from "next/image";
 import "./ProjectCard.scss";
-
 import { useRef, useState } from "react";
 import Link from "next/link";
 
-export default function ProjectCard({ title, links, description, techstack, font }) {
-  const [flipped, setFlipped] = useState(false);
-  // const cardRef = useRef(null)
-  
-
-  const handleClick = () => {
-    setFlipped(!flipped);
-  };
-
+export default function ProjectCard({
+  title,
+  links,
+  description,
+  techstack,
+  font,
+}) {
   return (
     <div className="project-card-container">
       <div className={font}>
-      {!flipped ? (
-        <div className="project-card-face" onClick={handleClick}>
-          <h2>{title}</h2>
-        </div>
-      ) : (
-        <div className="project-card-back" onClick={handleClick}>
+        <div className="project-card-back">
           <h3>{title}</h3>
           <div className="project-links">
             {links.map((link, index) => (
@@ -32,15 +24,14 @@ export default function ProjectCard({ title, links, description, techstack, font
               </Link>
             ))}
           </div>
+          <div className="project-info">
             <p>{description}</p>
-            {techstack.map((item) => (
-              <p>{item}</p>
+            {techstack.map((item, index) => (
+              <p key={index}>{item}</p>
             ))}
           </div>
-      )}
+        </div>
       </div>
     </div>
   );
 }
-
-
