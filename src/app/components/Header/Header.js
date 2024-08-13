@@ -9,7 +9,7 @@ export default function Header({ font }) {
           <Link href="/">home</Link>
           <Link href="#about">about</Link>
           <Link href="#projects">projects</Link>
-          <Link href="#projects">contact</Link>
+          <Link href="#contact">contact</Link>
         </nav>
       </div>
     </main>

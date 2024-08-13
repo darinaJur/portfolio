@@ -13,13 +13,13 @@ export default function ProjectCard({
   font,
 }) {
   return (
-    <div className="project-card-container">
+    <main className="project-card-container">
       <div className={font}>
         <div className="project-card-back">
           <h3>{title}</h3>
           <div className="project-links">
             {links.map((link, index) => (
-              <Link href={link.url}>
+              <Link key={index} href={link.url}>
                 <Image key={index} src={link.src} alt={link.alt} />
               </Link>
             ))}
@@ -32,6 +32,6 @@ export default function ProjectCard({
           </div>
         </div>
       </div>
-    </div>
+    </main>
   );
 }

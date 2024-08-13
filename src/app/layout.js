@@ -6,6 +6,7 @@ import Header from "./components/Header/Header";
 import Projects from "./components/Projects/Projects";
 import InteractiveBG from "./components/Interactive/InteractiveBG";
 import TechStack from "./components/TechStack/TechStack";
+import Contact from "./components/Contact/Contact";
 
 const inter = Inter({ subsets: ["latin"] });
 const ibmPlexMono = IBM_Plex_Mono({ subsets: ["latin"], weight: ["400"] });
@@ -26,6 +27,7 @@ export default function RootLayout({ children }) {
         <About font={encodeSansExpanded.className}/>
         {/* <TechStack /> */}
         <Projects font={encodeSansExpanded.className}/>
+        <Contact font={encodeSansExpanded.className}/>
       </body>
     </html>
   );

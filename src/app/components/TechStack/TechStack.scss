@@ -46,14 +46,15 @@
 
 .single-icon-background {
   border: 2px solid transparent;
-  background: linear-gradient(60deg, rgb(var(--color3)), rgb(var(--color5)))
-    border-box;
-  border-radius: 15px;
+  // background: linear-gradient(60deg, rgb(var(--color3)), rgb(var(--color5)))
+  //   border-box;
+  // border-radius: 15px;
   margin: 0.5rem;
 }
 
 .single-icon {
-  background: var(--color-bg);
+  // background: var(--color-bg);
+  background-color: rgba(255, 255, 255, 0.05);
   width: 100px;
   height: 100px;
   display: flex;
@@ -82,7 +83,8 @@
 }
 
 .single-icon-white {
-  background: var(--color-bg);
+  // background: var(--color-bg);
+  background-color: rgba(255, 255, 255, 0.05);
   width: 100px;
   height: 100px;
   display: flex;
