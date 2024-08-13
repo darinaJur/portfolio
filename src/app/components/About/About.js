@@ -3,13 +3,26 @@ import myPhoto from "./darina-photo.png";
 import "./about.scss";
 import DownButton from "../DownButton/DownButton";
 import TechStack from "../TechStack/TechStack";
+import Link from "next/link";
+import linkedInLogo from "./linkedin-logo.png";
+import githubLogo from "../../global_images/github-logo.png";
 
 export default function About({ font }) {
   return (
     <main id="about" className="about-page">
       <div className="about-container">
-        <div className="about-title-container">
-          <h1>about</h1>
+        <div className="about-top-section">
+          <div className="about-title-container">
+            <h1>about</h1>
+          </div>
+          <div className="about-logos-container">
+          <Link href="https://www.linkedin.com/in/darina-jurovskaja-64982085/">
+            <Image src={linkedInLogo} alt="LinkedIn Logo" />
+          </Link>
+          <Link href="https://github.com/darinaJur/">
+            <Image src={githubLogo} alt="GitHub Logo" />
+          </Link>
+          </div>
         </div>
         <div className={font}>
           <div className="photobio-container">

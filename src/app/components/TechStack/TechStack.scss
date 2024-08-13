@@ -1,12 +1,7 @@
 .techstack-container {
-  height: 100vh;
-  // background-color: rgba(26, 26, 26, 0.7);
   color: white;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  position: relative;
 }
 
 .techstack-title-container {
@@ -22,6 +17,8 @@
     text-align: left;
     display: inline-block;
     margin-bottom: 0;
+    margin-block-end: 0;
+    margin-block-start: 0;
   }
 
   h1::after {

@@ -75,7 +75,7 @@ export default function Contact({ font }) {
                 onChange={handleChange}
               />
             </label>
-        <button>SUBMIT</button>
+            <button>Send</button>
           </form>
         </div>
       </div>
