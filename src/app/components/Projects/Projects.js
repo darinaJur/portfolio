@@ -8,6 +8,7 @@ import ProjectCard from "./ProjectCard";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import DownButton from "../DownButton/DownButton";
 
 export default function Projects({ font }) {
   const projects = [
@@ -56,7 +57,7 @@ export default function Projects({ font }) {
     {
       title: "PORTFOLIO",
       description:
-        "A personal portfolio, featuring animated background using CSS and SVG filter and interactive mouse movements. ",
+        "A personal portfolio, featuring animated background using CSS and SVG filter and interactive mouse movements. Nodemail module is used for a contact form. ",
       techstack: ["Front-end: JavaScript, Next.js, HTML, Vanilla CSS, SVG"],
       links: [
         {
@@ -95,6 +96,7 @@ export default function Projects({ font }) {
           ))}
         </Slider>
       </div>
+      <DownButton pathway='#contact' />
     </main>
   );
 }

@@ -10,8 +10,6 @@ export default function Contact({ font }) {
     message: "",
   });
 
-  const [confirm, setConfirm] = useState("");
-
   const handleChange = (event) => {
     event.preventDefault();
 
@@ -37,6 +35,42 @@ export default function Contact({ font }) {
     }
   };
 
+  const sendEmail = async (formData) => {
+    const apiEndpoint = "/api/email";
+
+    try {
+      const response = await fetch(apiEndpoint, {
+        method: "POST",
+        body: JSON.stringify(formData),
+      });
+      const data = await response.json();
+
+      if (!response.ok) {
+        throw new Error(data.message || "Something went wrong.");
+      }
+      return data.message;
+    } catch (err) {
+      throw new Error(err.message);
+    }
+  };
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+
+    try {
+      await sendEmail(formData);
+      alert("Message sent!");
+
+      setFormData({
+        name: "",
+        email: "",
+        message: "",
+      });
+    } catch (error) {
+      alert("Failed to send the message.");
+    }
+  };
+
   return (
     <main id="contact" className="contact-page">
       <div className="contact-container">
@@ -44,12 +78,13 @@ export default function Contact({ font }) {
           <h1>contact</h1>
         </div>
         <div className={font}>
-          <form className="contact-form">
+          <form className="contact-form" onSubmit={handleSubmit}>
             <label>
               <p>Full Name</p>
               <input
                 type="text"
                 id="name"
+                value={formData.name}
                 required
                 placeholder="Name*"
                 onChange={handleChange}
@@ -60,6 +95,7 @@ export default function Contact({ font }) {
               <input
                 type="text"
                 id="email"
+                value={formData.email}
                 required
                 placeholder="Email Address*"
                 onChange={handleChange}
@@ -70,12 +106,13 @@ export default function Contact({ font }) {
               <textarea
                 type="text"
                 id="message"
+                value={formData.message}
                 required
                 placeholder="Message*"
                 onChange={handleChange}
               />
             </label>
-            <button>Send</button>
+            <button type="submit">Send</button>
           </form>
         </div>
       </div>
