@@ -19,7 +19,7 @@ export default function ProjectCard({
           <h3>{title}</h3>
           <div className="project-links">
             {links.map((link, index) => (
-              <Link key={index} href={link.url}>
+              <Link key={index} href={link.url} target="_blank">
                 <Image key={index} src={link.src} alt={link.alt} />
               </Link>
             ))}

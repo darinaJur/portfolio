@@ -68,9 +68,10 @@
     width: 100%;
     border-radius: 15px;
     border: 1px solid rgba(255, 255, 255, 0.266);
-    background-color: rgba(255, 255, 255, 0.05);
+    background-color: rgb(47, 49, 54);
     color: white;
     font-size: 17px;
     box-sizing: border-box;
+    z-index: 3;
   }
 }

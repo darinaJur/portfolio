@@ -24,13 +24,13 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${inter.className} ${ibmPlexMono.className}`}>
-        {/* <Header font={encodeSansExpanded.className} /> */}
+        <Header font={encodeSansExpanded.className} />
         {children}
         <InteractiveBG />
         {/* <InteractiveCursor /> */}
-        {/* <About font={encodeSansExpanded.className} />
+        <About font={encodeSansExpanded.className} />
         <Projects font={encodeSansExpanded.className} />
-        <Contact font={encodeSansExpanded.className} /> */}
+        <Contact font={encodeSansExpanded.className} />
       </body>
     </html>
   );

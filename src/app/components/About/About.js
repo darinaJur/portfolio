@@ -10,16 +10,18 @@ import githubLogo from "../../global_images/github-logo.png";
 export default function About({ font }) {
   return (
     <main id="about" className="about-page">
+      <div className="about-and-tech">
+
       <div className="about-container">
         <div className="about-top-section">
           <div className="about-title-container">
             <h1>about</h1>
           </div>
           <div className="about-logos-container">
-          <Link href="https://www.linkedin.com/in/darina-jurovskaja-64982085/">
+          <Link href="https://www.linkedin.com/in/darina-jurovskaja-64982085/" target="_blank">
             <Image src={linkedInLogo} alt="LinkedIn Logo" />
           </Link>
-          <Link href="https://github.com/darinaJur/">
+          <Link href="https://github.com/darinaJur/" target="_blank">
             <Image src={githubLogo} alt="GitHub Logo" />
           </Link>
           </div>
@@ -70,6 +72,7 @@ export default function About({ font }) {
         </div>
       </div>
       <TechStack />
+      </div>
       <DownButton pathway="#projects" />
     </main>
   );
