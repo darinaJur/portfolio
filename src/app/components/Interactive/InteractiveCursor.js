@@ -1,6 +1,6 @@
 "use client";
 
-import "./Interactive.scss"
+import "./Interactive.scss";
 
 import { useEffect, useRef } from "react";
 
@@ -38,7 +38,14 @@ const InteractiveCursor = () => {
     };
   }, []);
 
-  return <div ref={bubbleRef} className="interactive"></div>;
+  return (
+    // <div className="main-bg">
+    //   <div className="gradients-container">
+    <div className="interactive-cursor-bg">
+      <div ref={bubbleRef} className="interactive"></div>
+    </div>
+
+  );
 };
 
 export default InteractiveCursor;
