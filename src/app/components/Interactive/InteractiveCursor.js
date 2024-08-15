@@ -6,28 +6,28 @@ import { useEffect, useRef } from "react";
 
 const InteractiveCursor = () => {
   const bubbleRef = useRef(null);
-  let curX = 0;
-  let curY = 0;
-  let tgX = 0;
-  let tgY = 0;
+  const curX = useRef(0);
+  const curY = useRef(0);
+  const tgX = useRef(0);
+  const tgY = useRef(0);
 
   useEffect(() => {
     const interBubble = bubbleRef.current;
 
     const move = () => {
-      curX += (tgX - curX) / 20;
-      curY += (tgY - curY) / 20;
+      curX.current += (tgX.current - curX.current) / 20;
+      curY.current += (tgY.current - curY.current) / 20;
       if (interBubble) {
         interBubble.style.transform = `translate(${Math.round(
-          curX
+          curX.current
         )}px, ${Math.round(curY)}px)`;
       }
       requestAnimationFrame(move);
     };
 
     const handleMouseMove = (event) => {
-      tgX = event.clientX;
-      tgY = event.clientY;
+      tgX.current = event.clientX;
+      tgY.current = event.clientY;
     };
 
     window.addEventListener("mousemove", handleMouseMove);
@@ -39,8 +39,6 @@ const InteractiveCursor = () => {
   }, []);
 
   return (
-    // <div className="main-bg">
-    //   <div className="gradients-container">
     <div className="interactive-cursor-bg">
       <div ref={bubbleRef} className="interactive"></div>
     </div>

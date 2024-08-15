@@ -40,7 +40,7 @@ export default function About({ font }) {
               </div>
               <div className="bio-container">
                 <p>
-                  I'm a career changer from an engineer in construction to a
+                  I&apos;m a career changer from an engineer in construction to a
                   full-stack software developer, who is based in the south-west
                   England. Why programming? It is a combination of
                   problem-solving and creative thinking that lets me to turn
