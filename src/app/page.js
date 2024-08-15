@@ -15,7 +15,7 @@ export default function Home() {
             </h1>
           </div>
           <div className="small-description">
-            <p>{`I'm a full stack developer and welcome to my portfolio :)`}</p>
+            <p>{`I&apos;m a full stack developer and welcome to my portfolio :)`}</p>
           </div>
         </div>
       </div>
