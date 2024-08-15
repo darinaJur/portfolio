@@ -15,7 +15,7 @@ export default function Projects({ font }) {
     {
       title: "NC NEWS",
       description:
-        "A full-stack project, showcasing a Reddit-based RESTful API, created as a back-end project and featuring CRUD operations for articles, comments, and users. The front-end comprises a single-page application using React hooks for state management and user context. The project supports pagination, data filtering with query parameters, and user interaction, utilizing optimistic rendering.",
+        "A full-stack project, showcasing a Reddit-based RESTful API, created as a back-end project and featuring CRUD operations for articles, comments, and users. The front-end comprises a single-page application using React hooks for state management and user context. The project supports pagination, data filtering with query parameters and user interaction, utilizing optimistic rendering.",
       techstack: [
         "Back-end: JavaScript, PSQL, Node.js, Express, Supertest, Jest",
         "Front-end: JavaScript, HTML, CSS, React, Axios",
@@ -57,7 +57,7 @@ export default function Projects({ font }) {
     {
       title: "PORTFOLIO",
       description:
-        "A personal portfolio, featuring animated background using CSS and SVG filter and interactive mouse movements. Nodemail module is used for a contact form. ",
+        "A personal portfolio, showing an about section, a list of completed projects and a contact form. This website features animated background using Vanilla CSS + SVG filter and interactive mouse movements. The contact form uses Nodemail. A mobile web version is under development.",
       techstack: ["Front-end: JavaScript, Next.js, HTML, Vanilla CSS, SVG"],
       links: [
         {
