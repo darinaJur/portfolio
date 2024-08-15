@@ -11,7 +11,7 @@ export default function Home() {
         <div className="text-container">
           <div className="hello-message">
             <h1>
-              Hello, I&apos;m <span className="name">Darina</span>!
+              Hello, I&apos;m&nbsp;<span className="name">Darina</span>!
             </h1>
           </div>
           <div className="small-description">

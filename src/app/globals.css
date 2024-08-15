@@ -42,7 +42,6 @@ main {
 
   .name {
     color: rgb(var(--color3));
-    padding-left: 40px;
   }
 
   .small-description {

@@ -37,7 +37,7 @@
     min-width: 800px;
     justify-content: center;
     align-items: center;
-    margin-bottom: 20%;
+    margin-bottom: 15%;
 }
 
 .contact-form {
@@ -56,6 +56,8 @@
     width: 100%;
     padding: 10px;
     box-sizing: border-box;
+    font-family: 'Encode Sans Expanded', sans-serif;
+    letter-spacing: 0.1em;
   }
 
   textarea {

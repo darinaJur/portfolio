@@ -6,6 +6,7 @@ import Projects from "./components/Projects/Projects";
 import InteractiveBG from "./components/Interactive/InteractiveBG";
 import Contact from "./components/Contact/Contact";
 import InteractiveCursor from "./components/Interactive/InteractiveCursor";
+import Footer from "./components/Footer/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 const ibmPlexMono = IBM_Plex_Mono({ subsets: ["latin"], weight: ["400"] });
@@ -31,6 +32,7 @@ export default function RootLayout({ children }) {
         <About font={encodeSansExpanded.className} />
         <Projects font={encodeSansExpanded.className} />
         <Contact font={encodeSansExpanded.className} />
+        <Footer font={encodeSansExpanded.className} />
       </body>
     </html>
   );
