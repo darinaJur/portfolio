@@ -11,11 +11,11 @@ export default function Home() {
         <div className="text-container">
           <div className="hello-message">
             <h1>
-              Hello, I&apos;m <div className="name">Darina</div>!
+              Hello, I&apos;m <span className="name">Darina</span>!
             </h1>
           </div>
           <div className="small-description">
-            <p>{`I&apos;m a full stack developer and welcome to my portfolio :)`}</p>
+            <p>I&apos;m a full stack developer and welcome to my portfolio {':)'}</p>
           </div>
         </div>
       </div>
