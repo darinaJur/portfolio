@@ -77,7 +77,6 @@ export default function About({ font }) {
         </div>
         <TechStack />
       </div>
-      <DownButton pathway="#projects" />
     </main>
   );
 }

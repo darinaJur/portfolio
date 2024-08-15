@@ -96,7 +96,6 @@ export default function Projects({ font }) {
           ))}
         </Slider>
       </div>
-      <DownButton pathway="#contact" />
     </main>
   );
 }

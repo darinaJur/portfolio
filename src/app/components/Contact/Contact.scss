@@ -1,5 +1,4 @@
 .contact-page {
-  height: 100vh;
   background-color: rgb(26, 26, 26, 70%);
   color: white;
   display: flex;
@@ -12,13 +11,13 @@
 }
 
 .contact-title-container {
-  left: 0;
+  text-align: center;
+  margin-top: 15%;
 
   h1 {
     position: relative;
     font-size: 80px;
     z-index: 1;
-    text-align: left;
     display: inline-block;
   }
 
@@ -37,7 +36,8 @@
 .contact-container {
     min-width: 800px;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
+    margin-bottom: 20%;
 }
 
 .contact-form {
