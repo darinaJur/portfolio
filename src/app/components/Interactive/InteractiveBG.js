@@ -1,5 +1,4 @@
 import './Interactive.scss'
-import InteractiveCursor from './InteractiveCursor';
 
 export default function InteractiveBG() {
   return (
@@ -29,7 +28,6 @@ export default function InteractiveBG() {
           <div className="g3"></div>
           <div className="g4"></div>
           <div className="g5"></div>
-          {/* <InteractiveCursor /> */}
         </div>
       </div>
     </main>

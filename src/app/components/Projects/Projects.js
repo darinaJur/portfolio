@@ -8,14 +8,13 @@ import ProjectCard from "./ProjectCard";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import DownButton from "../DownButton/DownButton";
 
 export default function Projects({ font }) {
   const projects = [
     {
       title: "NC NEWS",
       description:
-        "A full-stack project, showcasing a Reddit-based RESTful API, created as a back-end project and featuring CRUD operations for articles, comments, and users. The front-end comprises a single-page application using React hooks for state management and user context. The project supports pagination, data filtering with query parameters and user interaction, utilizing optimistic rendering.",
+        "A full-stack project, showcasing a Reddit-based RESTful API, created as a back-end project and featuring CRUD operations for articles, comments, and users. The front-end comprises a single-page application using React hooks for state management and user context. The project supports pagination, data filtering with query parameters and user interaction, utilising optimistic rendering.",
       techstack: [
         "Back-end: JavaScript, PSQL, Node.js, Express, Supertest, Jest",
         "Front-end: JavaScript, HTML, CSS, React, Axios",
@@ -41,7 +40,7 @@ export default function Projects({ font }) {
     {
       title: "RECIPE BOX",
       description:
-        "An iOS app for adding, storing and viewing recipes, featuring dynamic visual representation of recipe collections. The app features an ability to filter and sort recipes and allows users to import recipes via text extraction from screenshots.",
+        "An iOS app for adding, storing and viewing recipes, featuring dynamic visual representation of recipe collections. The app includes a feature to filter and sort recipes and allows users to import recipes via text extraction from screenshots.",
       techstack: [
         "Back-end: Firebase, Firestore, Google Cloud Vision",
         "Front-end: JavaScript, React Native, Expo, NativeWind/Tailwind, Axios",
@@ -57,7 +56,7 @@ export default function Projects({ font }) {
     {
       title: "PORTFOLIO",
       description:
-        "A personal portfolio, showing an about section, a list of completed projects and a contact form. This website features animated background using Vanilla CSS + SVG filter and interactive mouse movements. The contact form uses Nodemail. A mobile web version is under development.",
+        "A personal portfolio, showing an about section, a list of completed projects and a contact form. This website features animated background using Vanilla CSS + SVG filter. The contact form uses Nodemail. A mobile web version is under development.",
       techstack: ["Front-end: JavaScript, Next.js, HTML, Vanilla CSS, SVG"],
       links: [
         {

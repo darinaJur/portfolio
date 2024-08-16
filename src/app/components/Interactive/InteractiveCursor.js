@@ -20,7 +20,7 @@ const InteractiveCursor = () => {
       if (interBubble) {
         interBubble.style.transform = `translate(${Math.round(
           curX.current
-        )}px, ${Math.round(curY)}px)`;
+        )}px, ${Math.round(curY.current)}px)`;
       }
       requestAnimationFrame(move);
     };

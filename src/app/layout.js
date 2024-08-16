@@ -28,7 +28,7 @@ export default function RootLayout({ children }) {
         <Header font={encodeSansExpanded.className} />
         {children}
         <InteractiveBG />
-        {/* <InteractiveCursor /> */}
+        <InteractiveCursor />
         <About font={encodeSansExpanded.className} />
         <Projects font={encodeSansExpanded.className} />
         <Contact font={encodeSansExpanded.className} />
