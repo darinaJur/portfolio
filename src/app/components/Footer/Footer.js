@@ -1,5 +1,5 @@
 import Link from "next/link";
-import "./footer.scss";
+import "./Footer.scss";
 import Image from "next/image";
 import linkedInLogo from "../About/linkedin-logo.png";
 import githubLogo from "../../global_images/github-logo.png";
