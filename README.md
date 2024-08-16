@@ -8,7 +8,7 @@ This portfolio is built with [Next.js](https://nextjs.org/) bootstrapped with [`
 
 [Deployed version](https://darina.dev/)
 
-Note: the mobile web development version is under development.
+Note: the mobile web version is under development.
 
 ## How to use
 
