@@ -56,7 +56,7 @@ export default function Projects({ font }) {
     {
       title: "PORTFOLIO",
       description:
-        "A personal portfolio, showing an about section, a list of completed projects and a contact form. This website features animated background using Vanilla CSS + SVG filter. The contact form uses Nodemail. A mobile web version is under development.",
+        "A personal portfolio, showing an about section, a list of completed projects and a contact form. This website features animated background using Vanilla CSS + SVG filter. The contact form uses SendGrid. A mobile web version is under development.",
       techstack: ["Front-end: JavaScript, Next.js, HTML, Vanilla CSS, SVG"],
       links: [
         {

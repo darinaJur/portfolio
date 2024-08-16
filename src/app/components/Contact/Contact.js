@@ -41,6 +41,9 @@ export default function Contact({ font }) {
     try {
       const response = await fetch(apiEndpoint, {
         method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
         body: JSON.stringify(formData),
       });
       const data = await response.json();
