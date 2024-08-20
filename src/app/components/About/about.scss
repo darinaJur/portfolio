@@ -64,7 +64,6 @@
     padding-left: 1rem;
   }
 }
-  
 
 .photobio-container {
   display: flex;
@@ -119,5 +118,61 @@
   }
   li {
     padding-bottom: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-page {
+    padding: 0;
+    margin: 0;
+    flex-direction: column;
+    align-items: center;
+
+    h1 {
+      font-size: 70px;
+    }
+  }
+
+  .about-container {
+    margin: 0;
+  }
+
+  .about-top-section {
+    flex-direction: column;
+
+    img {
+      width: 30px;
+    }
+  }
+
+  .about-and-tech {
+    margin-top: 2rem;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .photobio-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .photo-container img {
+    width: 80px;
+    height: auto;
+  }
+
+  .bio-container {
+    text-align: center;
+    font-size: 15px;
+    max-width: 350px;
+    margin-bottom: 1rem;
+  }
+
+  .hobbies-container {
+    align-items: center;
+    text-align: center;
+    padding-left: 1rem;
+    font-size: 15px;
+    max-width: 350px;
   }
 }

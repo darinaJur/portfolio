@@ -96,3 +96,35 @@
     left: 100%;
   }
 }
+
+
+@media (max-width: 768px) {
+  .contact-page {
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    h1 {
+      font-size: 60px;
+    }
+
+    input,
+    textarea {
+      width: 350px;
+    }
+
+    .contact-form {
+      // align-items: center;
+      // justify-content: center;
+      text-align: center;
+      align-items: center;
+
+      button {
+         width: 350px;
+       }
+    } 
+  }
+  
+}

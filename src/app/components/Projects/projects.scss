@@ -45,3 +45,32 @@
 .slick-track {
   padding: 0rem 2.6rem;
 }
+
+@media (max-width: 768px) {
+  .projects-page {
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    h1 {
+      font-size: 60px;
+      margin: 0;
+    }
+
+    .projects-container {
+      margin-top: 5rem;
+      
+      .slick-list {
+        margin-left: 21rem;
+      }
+  
+      // .slick-track {
+      //   padding: 0 1rem;
+      //   margin-left: 5rem;
+      // }
+    }
+
+  }
+}
