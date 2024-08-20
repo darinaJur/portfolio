@@ -51,13 +51,17 @@ main {
 
 @media (max-width: 768px) {
   .submain-container {
-    padding: 0 10px;
+    padding: 0 20px;
   }
   
   .text-container {
-    font-size: 18px;
+    font-size: 16px;
     display: flex;
     flex-wrap: wrap;
+
+    h1 {
+      font-size: 30px;
+    }
   }
 
   .hello-message .small-description {
