@@ -8,7 +8,7 @@ main {
   --color-bg: rgb(26, 26, 26);
   --color1: 92, 95, 163;
   --color2: 149, 103, 255;
-  --color3: 173, 255, 191; 
+  --color3: 173, 255, 191;
   --color4: 255, 238, 152;
   --color5: 152, 178, 255;
   --color-interactive: 36, 245, 200;
@@ -46,5 +46,22 @@ main {
 
   .small-description {
     text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .submain-container {
+    padding: 0 10px;
+  }
+  
+  .text-container {
+    font-size: 18px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .hello-message .small-description {
+    display: flex;
+    flex-wrap: wrap;
   }
 }
