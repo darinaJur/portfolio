@@ -49,16 +49,15 @@
     margin: 0;
     overflow: hidden;
     z-index: 1000;
-    text-align: left;
-    align-items: left;
-    justify-content: left;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
     position: fixed;
 
     .menu-container {
       display: flex;
       padding: 0;
       margin: 0;
-      margin-left: 3rem;
 
       a {
         font-size: 14px;

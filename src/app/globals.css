@@ -50,10 +50,15 @@ main {
 }
 
 @media (max-width: 768px) {
+
+  main {
+    overflow-x: hidden;
+  }
+  
   .submain-container {
     padding: 0 20px;
   }
-  
+
   .text-container {
     font-size: 16px;
     display: flex;
