@@ -34,10 +34,10 @@
 }
 
 .contact-container {
-    min-width: 800px;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 15%;
+  min-width: 800px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15%;
 }
 
 .contact-form {
@@ -56,7 +56,7 @@
     width: 100%;
     padding: 10px;
     box-sizing: border-box;
-    font-family: 'Encode Sans Expanded', sans-serif;
+    font-family: "Encode Sans Expanded", sans-serif;
     letter-spacing: 0.1em;
   }
 
@@ -82,7 +82,7 @@
   }
 
   button::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: -100%;
@@ -97,7 +97,6 @@
   }
 }
 
-
 @media (max-width: 768px) {
   .contact-page {
     padding: 0;
@@ -105,6 +104,10 @@
     align-items: center;
     justify-content: center;
     text-align: center;
+
+    .contact-container {
+      min-width: 100%;
+    }
 
     h1 {
       font-size: 60px;
@@ -116,15 +119,12 @@
     }
 
     .contact-form {
-      // align-items: center;
-      // justify-content: center;
       text-align: center;
       align-items: center;
 
       button {
-         width: 350px;
-       }
-    } 
+        width: 350px;
+      }
+    }
   }
-  
 }

@@ -7,6 +7,7 @@
   align-items: center;
   text-align: left;
   position: relative;
+  overflow: hidden;
 }
 
 .projects-container {
@@ -63,6 +64,7 @@
       margin-top: 5rem;
       
       .slick-list {
+        overflow: hidden;
         margin-left: 21rem;
       }
   

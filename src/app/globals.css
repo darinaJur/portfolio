@@ -50,11 +50,11 @@ main {
 }
 
 @media (max-width: 768px) {
-
+/* 
   main {
     overflow-x: hidden;
-  }
-  
+  } */
+
   .submain-container {
     padding: 0 20px;
   }
