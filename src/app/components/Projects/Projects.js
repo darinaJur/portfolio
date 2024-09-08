@@ -76,7 +76,7 @@ export default function Projects({ font }) {
     slidesToScroll: 1,
     responsive: [
       {
-        breakpoint: 390,
+        breakpoint: 768,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,

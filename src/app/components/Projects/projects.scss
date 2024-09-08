@@ -7,11 +7,10 @@
   align-items: center;
   text-align: left;
   position: relative;
-  overflow: visible;
+  overflow: hidden;
 }
 
 .projects-container {
-  overflow: visible;
   align-items: flex-start;
   margin-bottom: 0rem;
   width: 1100px;
@@ -44,6 +43,10 @@
   }
 }
 
+.slick-track {
+  padding: 0rem 2.6rem;
+}
+
 @media (max-width: 768px) {
   .projects-page {
     padding: 0;
@@ -51,7 +54,6 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    // overflow: hidden;
 
     h1 {
       font-size: 60px;
@@ -60,17 +62,15 @@
 
     .projects-container {
       margin-top: 5rem;
-      
+
       .slick-list {
-        // overflow: hidden;
+        overflow: hidden;
         margin-left: 21rem;
       }
-  
-      .slick-track {
-        // padding: 0 1rem;
-        margin-left: 5rem;
-      }
     }
+  }
 
+  .slick-dots {
+    overflow: visible;
   }
 }
