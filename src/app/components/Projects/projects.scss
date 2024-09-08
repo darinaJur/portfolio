@@ -7,7 +7,7 @@
   align-items: center;
   text-align: left;
   position: relative;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .projects-container {
@@ -15,6 +15,7 @@
   margin-bottom: 0rem;
   width: 1100px;
   margin-top: 8%;
+  height: 785px;
 }
 
 .project-title-container {
