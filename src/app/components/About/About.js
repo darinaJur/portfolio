@@ -18,7 +18,7 @@ export default function About({ font }) {
             </div>
             <div className="about-logos-container">
               <Link
-                href="https://www.linkedin.com/in/darina-jurovskaja-64982085/"
+                href="https://www.linkedin.com/in/darina-jurovskaja/"
                 target="_blank"
               >
                 <Image src={linkedInLogo} alt="LinkedIn Logo" />
