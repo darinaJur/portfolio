@@ -7,7 +7,7 @@
   align-items: center;
   text-align: left;
   position: relative;
-  overflow: auto;
+  overflow: visible;
 }
 
 .projects-container {
@@ -44,17 +44,6 @@
   }
 }
 
-.slick-dots {
-  color: white;
-}
-
-.slick-active {
-  button {
-    color: white;
-    background-color: white;
-  }
-}
-
 @media (max-width: 768px) {
   .projects-page {
     padding: 0;
@@ -62,7 +51,7 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    overflow: hidden;
+    // overflow: hidden;
 
     h1 {
       font-size: 60px;
@@ -73,14 +62,14 @@
       margin-top: 5rem;
       
       .slick-list {
-        overflow: hidden;
+        // overflow: hidden;
         margin-left: 21rem;
       }
   
-      // .slick-track {
-      //   padding: 0 1rem;
-      //   margin-left: 5rem;
-      // }
+      .slick-track {
+        // padding: 0 1rem;
+        margin-left: 5rem;
+      }
     }
 
   }
